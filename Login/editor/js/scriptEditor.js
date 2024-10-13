@@ -184,7 +184,7 @@ window.onscroll = () => {
         const savedContent = localStorage.getItem('editableContent'); // Get the saved content
         if (savedContent) {
             document.getElementById('editable-content').innerHTML = savedContent; // Set the content if it exists
-            alert('Content loaded!');
+            // alert('Content loaded!');
         } else {
             alert('No saved content found.');
         }
@@ -192,7 +192,7 @@ window.onscroll = () => {
 
     // Add event listeners to buttons
     document.getElementById('save-btn').addEventListener('click', saveContent);
-    document.getElementById('load-btn').addEventListener('click', loadContent);
+    // document.getElementById('load-btn').addEventListener('click', loadContent);
 
     // Optionally load content when the page loads
     window.onload = loadContent;
