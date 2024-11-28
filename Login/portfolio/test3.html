@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Underline on Hover</title>
+  <style>
+    /* Basic styling for the anchor */
+    a {
+      position: relative;
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+      padding-bottom: 2px; /* Add a bit of spacing for the underline */
+      transition: color 0.3s ease; /* Smooth color transition */
+    }
+
+    /* Hover color change */
+    a:hover {
+      color: #0073e6;
+    }
+
+    /* Create the underline effect */
+    a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #0073e6;
+      transform: scaleX(0); /* Start with no underline */
+      transform-origin: bottom right; /* Start animation from the right */
+      transition: transform 0.3s ease; /* Smooth animation */
+    }
+
+    /* Expand the underline smoothly on hover */
+    a:hover::after {
+      transform: scaleX(1); /* Full-width underline */
+      transform-origin: bottom left; /* Animate from left to right */
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#">Hover Over Me</a>
+
+</body>
+</html>
