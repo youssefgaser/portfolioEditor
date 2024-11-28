@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Headings with Save All Feature</title>
+    <link rel="stylesheet" href="./css/editor.css">
+    <style>
+        .editing {
+            outline: 2px dashed #007bff;
+            background-color: #f0f8ff;
+        }
+
+        #save-all-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Editable Headings with Save All Feature -->
+    <section class="home" id="home">
+        <h1 class="editable-heading" data-key="heading-home">Hi, I'm Shymaa Selim</h1>
+        <p>High School chemistry has been my passion and profession since 2004...</p>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="editable-heading" data-key="heading-about">About Me</h2>
+        <p>Passionate high school chemistry educator since 2004...</p>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="editable-heading" data-key="heading-education">My Journey</h2>
+        <p>My educational and professional journey...</p>
+    </section>
+
+    <!-- Save All Button -->
+    <button id="save-all-button">Save All</button>
+
+    <script src="./js/scriptEditor.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const editableHeadings = document.querySelectorAll(".editable-heading");
+            const saveAllButton = document.getElementById("save-all-button");
+
+            // Load saved content from local storage on page load
+            editableHeadings.forEach(heading => {
+                const key = heading.getAttribute("data-key");
+                const savedContent = localStorage.getItem(key);
+                if (savedContent) {
+                    heading.textContent = savedContent;
+                }
+
+                // Add click event to make heading editable
+                heading.addEventListener("click", function () {
+                    heading.setAttribute("contenteditable", "true");
+                    heading.focus();
+                    heading.classList.add("editing");
+
+                    // Save changes on pressing Enter
+                    heading.addEventListener("keydown", function (event) {
+                        if (event.key === "Enter") {
+                            event.preventDefault();
+                            heading.blur();
+                        }
+                    });
+
+                    // Remove editing on blur
+                    heading.addEventListener("blur", function () {
+                        heading.removeAttribute("contenteditable");
+                        heading.classList.remove("editing");
+                    });
+                });
+            });
+
+            // Save all headings to local storage when the "Save All" button is clicked
+            saveAllButton.addEventListener("click", function () {
+                editableHeadings.forEach(heading => {
+                    const key = heading.getAttribute("data-key");
+                    const content = heading.textContent;
+
+                    // Save content to local storage
+                    localStorage.setItem(key, content);
+                });
+                alert("All content saved successfully!");
+            });
+        });
+
+    </script>
+</body>
+
+</html>

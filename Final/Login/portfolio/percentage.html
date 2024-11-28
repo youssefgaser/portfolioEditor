@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Percentage Selector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .slider-container {
+      width: 300px;
+      margin: 20px auto;
+      text-align: center;
+    }
+    .percentage-display {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="slider-container">
+    <input 
+      type="range" 
+      id="percentage-slider" 
+      min="0" 
+      max="100" 
+      value="50" 
+      step="1" 
+      oninput="updatePercentage(this.value)">
+    <div class="percentage-display" id="percentage-display">50%</div>
+  </div>
+
+  <script>
+    function updatePercentage(value) {
+      document.getElementById('percentage-display').textContent = value + '%';
+    }
+  </script>
+</body>
+</html>
