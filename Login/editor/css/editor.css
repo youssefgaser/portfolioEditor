@@ -1413,8 +1413,8 @@ section:nth-child(odd) .animate.scroll,
 
 /* Optional: You can also scale the entire form when hovering */
 #contentForm:hover {
-  transform: scale(1); /* Slightly increase the size of the form */
-  transition: transform 0.3s ease; /* Smooth transition for scaling */
+/*   transform: scale(1); /* Slightly increase the size of the form */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */ */
 }
 
 
