@@ -1,0 +1,21 @@
+body {
+    direction: ltr;
+    text-align: right;
+    font-family: "Tajawal", "Arial", sans-serif; /* Example Arabic-friendly font */
+}
+
+.header, .home, .education, .skills {
+    direction: rtl;
+}
+
+#openModalBtn {
+    right: 0;
+    left: 2rem;
+}
+
+#publish {
+    position: absolute;
+    left: 2rem;
+    max-width: fit-content;
+    diplay: block;
+}

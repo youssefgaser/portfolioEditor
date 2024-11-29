@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شيماء سليم</title>
+
+    <link rel="stylesheet" href="../editor/css/editor.css">
+    <link rel="stylesheet" href="../editor/css/editorAr.css">
+    <link rel="icon" href="./images/editor.svg" type="image/svg+xml">
+
+    <!-- أيقونات بوكس -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- تصميم الرأس -->
+    <header class="header">
+        <a href="#" class="logo editable-text" data-key="header-a" contenteditable="false">شيماء.<span class="animate" style="--i:1;"></span></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">الرئيسية</a>
+            <a href="#about">من أنا</a>
+            <a href="#education">التعليم</a>
+            <a href="#skills">المهارات</a>
+            <a href="#contact">التواصل</a>
+
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2;"></span>
+        </nav>
+    </header>
+
+
+    <!-- تصميم قسم الرئيسية -->
+    <section class="home show-animate" id="home">
+        <div class="home-content">
+            <h1>مرحبًا، أنا <span id="userTitle">شيماء سليم</span></h1><span class="animate scroll" style="--i:2;"></span>
+            <div class="text-animate">
+                <h3 id="userDescription">  معلمة كيمياء ثانوية عامة</h3>
+                <span class="animate scroll" style="--i:3;"></span>
+            </div>
+            <p>
+                الكيمياء في المرحلة الثانوية كانت شغفي ومهنتي منذ عام 2004. بحصولي على درجة البكالوريوس في العلوم والتعليم، متخصصًا في الكيمياء، أنا ملتزمة بتعزيز بيئة تعليمية إيجابية وجذابة حيث يبني الطلاب أساسًا قويًا في الكيمياء.
+            </p><span class="animate scroll" style="--i:4;"></span>
+
+            <div class="btn-box">
+                <a href="tel:+201111916399" class="btn">وظفني</a>
+                <a href="./editor.html" class="btn">English</a>
+                <span class="animate scroll" style="--i:5;"></span>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="https://www.facebook.com/shymaa.selim.3"><i class='bx bxl-facebook'></i></a>
+            <a href="#" id="twitterLink"><i class='bx bxl-twitter'></i></a>
+            <a href="#" id="linkedinLink"><i class='bx bxl-linkedin'></i></a>
+            <span class="animate scroll" style="--i:6;"></span>
+        </div>
+
+        <div class="home-imgHover"></div>
+        <span class="animate home-img scroll" style="--i:7;"></span>
+    </section>
+
+    <!-- تصميم قسم من أنا -->
+    <section class="about" id="about">
+        <h2 class="heading">معلومات <span>عني</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <div class="about-img">
+            <img src="./images/shymaaFullBody.jpg" alt="صورة شيماء سليم" class="hover-image">
+            <span class="circle-spin"></span>
+            <span class="animate scroll" style="--i:2;"></span>
+        </div>
+        <div class="overlay"></div>
+
+
+        <div class="about-content">
+            <h3>
+                <span class="editable-text" data-key="about-h3" contenteditable="false">معلمة كيمياء</span>
+                <span class="animate scroll" style="--i:3;"></span>
+            </h3>
+            <div class="text-container">
+                <p>
+                    معلمة كيمياء شغوفة في المرحلة الثانوية منذ عام 2004، ملتزمة بإشراك الطلاب وضمان نجاحهم. أشارك بشكل نشط في التطوير المهني من خلال حضور المؤتمرات وورش العمل والندوات الإلكترونية لأظل محدثة في المجال. بمهارات تكنولوجية قوية، أدمج الأدوات التفاعلية لتعزيز التعلم والحفاظ على بيئة مختبر آمنة ومنظمة للتجارب العملية. <span class="more-text">كمرشدة، أدعم الطلاب في تحقيق أهدافهم الأكاديمية والنمو الشخصي. أتفوق في مهارات التواصل والتعاون، مما يخلق تجربة تعليمية داعمة وجذابة للجميع.</span>
+                    <span class="animate scroll" style="--i:4;">
+                </p>
+            </div>
+
+            <div class="btn-box btns">
+                <a class="btn">اقرأ المزيد</a>
+                <span class="animate scroll" style="--i:5;"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- تصميم قسم التعليم -->
+    <section class="education" id="education">
+        <h2 class="heading">رحلتي <span>التعليمية</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">التعليم<span class="animate scroll" style="--i:2;"></span></h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2002</div>
+                            <h3>بكالوريوس العلوم - جامعة الإسكندرية</h3>
+                            <p>لقد شاركت بنشاط في فرص التطوير المهني. حضرت مؤتمرات وورش عمل وندوات إلكترونية وأنا عضو في منظمات مهنية متعلقة بتعليم الكيمياء.</p><!--<a class="click">See More</a>--> 
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2002</div>
+                            <h3>درجة التعليم - جامعة الإسكندرية</h3>
+                            <p>أتمتع بمهارات تواصل ممتازة شفهية وكتابية تمكنني من التفاعل بفعالية مع الطلاب وأولياء الأمور والزملاء.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2003</div>
+                            <h3>دبلومة في علم النفس الإرشادي - جامعة الإسكندرية</h3>
+                            <p>تعزز دبلومة علم النفس الإرشادي قدرتي كمعلمة كيمياء من خلال تزويدي بالمهارات لدعم الرفاهية النفسية للطلاب، مما يساهم في خلق بيئة تعليمية إيجابية ومنتجة.</p>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:3;"></span>
+                </div>
+            </div>
+
+            <div class="education-column">
+                <h3 class="title">الخبرات<span class="animate scroll" style="--i:5;"></span></h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>منذ 2003</div>
+                            <h3>الإرشاد الطلابي</h3>
+                            <p>لقد خدمت كمرشدة لعدد كبير من الطلاب طوال مسيرتي المهنية. لقد دعمتهم في تحديد الأهداف، التغلب على التحديات، وتطوير المهارات الأساسية للنجاح الأكاديمي.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>منذ 1998</div>
+                            <h3>إدارة المختبر</h3>
+                            <p>لقد عملت بجد لضمان بيئة آمنة ومناسبة للطلاب لإجراء التجارب. لقد وضعت بروتوكولات المختبر، حافظت على المعدات، وقدمت التوجيه بشأن التعامل الصحيح والتخلص من المواد الكيميائية.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>منذ 2003</div>
+                            <h3>دمج التكنولوجيا</h3>
+                            <p>أمتلك مهارات تكنولوجية قوية وقد نجحت في دمج تقنيات تعليمية مختلفة في تدريسي مثل اللوحات التفاعلية، البرمجيات التعليمية، والموارد الإلكترونية. أؤمن بالاستفادة من قوة التكنولوجيا لتعزيز مشاركة الطلاب وفهمهم.</p>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:6;"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تصميم قسم المهارات -->
+    <section class="skills" id="skills">
+        <h2 class="heading">مهاراتي <span>العملية</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">المهارات الصلبة<span class="animate scroll" style="--i:2;"></span></h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>خبرة الموضوع <span>95%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>تطوير المنهج الدراسي <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>مهارات المختبر <span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>التقييم والتقويم <span>99%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:3;"></span>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3 class="title">المهارات الناعمة<span class="animate scroll" style="--i:5;"></span></h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>مهارات التواصل <span>95%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>إدارة الفصل الدراسي <span>97%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>التعاون والعمل الجماعي <span>85%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>التفكير النقدي وحل المشكلات <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:6;"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تصميم قسم التواصل -->
+    <section class="contact" id="contact">
+        <h2 class="heading">تواصل <span>معي!</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="الاسم الكامل" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="عنوان البريد الإلكتروني" required>
+                    <span class="focus"></span>
+                </div>
+
+                <span class="animate scroll" style="--i:3;"></span>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="رقم الهاتف" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="موضوع الرسالة" required>
+                    <span class="focus"></span>
+                </div>
+
+                <span class="animate scroll" style="--i:5;"></span>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="رسالتك" required></textarea>
+                <span class="focus"></span>
+
+                <span class="animate scroll" style="--i:7;"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <button type="submit" class="btn">إرسال</button>
+
+                <span class="animate scroll" style="--i:9;"></span>
+            </div>
+        </form>
+    </section>
+
+    <!-- زر حفظ الكل -->
+    <button id="saveAllBtn" class="save-button">حفظ الكل</button>
+    
+    <!-- زر إعادة التعيين -->
+    <button id="resetBtn" class="reset-button">إعادة تعيين الكل</button>
+
+    <!-- زر إزالة جميع التعديلات -->
+    <button id="removeBtn" class="remove-button">إزالة جميع التعديلات</button>
+
+
+    <!-- تصميم الفوتر -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>حقوق النشر &copy; 2024 بواسطة يوسف القاضي | جميع الحقوق محفوظة.</p>
+
+            <span class="animate scroll" style="--i:1;"></span>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+
+            <span class="animate scroll" style="--i:3;"></span>
+        </div>
+    </footer>
+
+    <!--Alert Message container -->
+    <div class="message-container" id="messageContainer" style="display: none;">
+        <div class="message-box">
+          <h2 class="message-title">غير متاح حاليا</h2>
+          <p class="message-body">
+            عذرًا، الصفحة أو الرابط الذي تحاول الوصول إليه غير متاح في الوقت الحالي. يرجى المحاولة لاحقًا أو العودة إلى الصفحة الرئيسية.
+          </p>
+          <a href="#" class="btn primary-btn" id="closeMessageBtn"><div class="alert-message-btn"> العودة إلى الصفحة الرئيسية </div></a>
+        </div>
+      </div>
+      
+      
+    
+    <!-- زر فتح المودال -->
+    <a id="openModalBtn" class="open-modal-btn" onclick="openModal()" style="display: none;">
+        <i class="pen-icon"></i>
+        <i class="fas fa-pen"></i>
+        <span class="hover-text">تعديل المحتوى</span>
+    </a>
+      
+    <!-- المودال -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeBtn">&times;</span>
+            <h2>تعديل جميع المحتويات</h2>
+            <form id="contentForm">
+                <!-- القسم العام -->
+                <fieldset>
+                    <legend>معلومات عامة</legend>
+                    <label for="titleInput">عنوان الصفحة</label>
+                    <input type="text" id="titleInput" placeholder="أدخل عنوان الصفحة الجديد" required>
+
+                    <label for="homeHeading">عنوان الصفحة الرئيسية</label>
+                    <textarea id="homeHeading" placeholder="أدخل العنوان الرئيسي للصفحة الرئيسية" rows="2" required></textarea>
+
+                    <label for="homeSubheading">العنوان الفرعي للصفحة الرئيسية</label>
+                    <textarea id="homeSubheading" placeholder="أدخل العنوان الفرعي للصفحة الرئيسية" rows="2" required></textarea>
+
+                    <label for="homeDescription">وصف الصفحة الرئيسية</label>
+                    <textarea id="homeDescription" placeholder="وصف محتوى الصفحة الرئيسية" rows="2" required></textarea>
+                </fieldset>
+
+                <!-- قسم من أنا -->
+                <fieldset>
+                    <legend>قسم من أنا</legend>
+                    <label for="aboutHeading">عنوان قسم من أنا</label>
+                    <textarea id="aboutHeading" placeholder="أدخل عنوان قسم من أنا" rows="2" required></textarea>
+
+                    <label for="aboutDescription">وصف قسم من أنا</label>
+                    <textarea id="aboutDescription" placeholder="أدخل وصفًا تفصيليًا لقسم من أنا" rows="2" required></textarea>
+                </fieldset>
+
+                <!-- قسم التعليم -->
+                <fieldset>
+                    <legend>التعليم</legend>
+                    <label for="educationDate">التاريخ</label>
+                    <input type="text" id="educationDate" placeholder="أدخل الجدول الزمني للتعليم">
+
+                    <label for="educationDegree">الدرجة العلمية</label>
+                    <input type="text" id="educationDegree" placeholder="أدخل الدرجة العلمية التي تم الحصول عليها" required>
+
+                    <label for="educationDescription">الوصف</label>
+                    <textarea id="educationDescription" placeholder="وصف تفاصيل التعليم" rows="2"></textarea>
+                </fieldset>
+
+                <!-- قسم الخبرات -->
+                <fieldset>
+                    <legend>الخبرات</legend>
+                    <label for="experienceDate">التاريخ</label>
+                    <input type="text" id="experienceDate" placeholder="أدخل الجدول الزمني للخبرة">
+
+                    <label for="experienceLabel">المسمى الوظيفي</label>
+                    <input type="text" id="experienceLabel" placeholder="أدخل المسمى الوظيفي" required>
+
+                    <label for="experienceDescription">الوصف</label>
+                    <textarea id="experienceDescription" placeholder="وصف الخبرة العملية" rows="2"></textarea>
+                </fieldset>
+
+                <!-- قسم المهارات -->
+                <fieldset>
+                    <legend>المهارات</legend>
+                    <div class="skill-group">
+                        <label for="hardSkillLabel">مهارة صلبة</label>
+                        <input type="text" id="hardSkillLabel" placeholder="أدخل مهارة صلبة">
+                        <input type="range" id="hardSkillPercentage" class="percentage-slider" min="0" max="100" value="50" step="1" oninput="updatePercentage1(this.value)">
+                        <div class="percentage-display" id="hardSkillDisplay">50%</div>
+                    </div>
+
+                    <div class="skill-group">
+                        <label for="softSkillLabel">مهارة ناعمة</label>
+                        <input type="text" id="softSkillLabel" placeholder="أدخل مهارة ناعمة">
+                        <input type="range" id="softSkillPercentage" class="percentage-slider" min="0" max="100" value="50" step="1" oninput="updatePercentage2(this.value)">
+                        <div class="percentage-display" id="softSkillDisplay">50%</div>
+                    </div>
+                </fieldset>
+
+                <!-- قسم الاتصال -->
+                <fieldset>
+                    <legend>معلومات الاتصال</legend>
+                    <label for="contactInfo">معلومات الاتصال</label>
+                    <textarea id="contactInfo" placeholder="أدخل تفاصيل الاتصال مثل البريد الإلكتروني، الهاتف، أو العنوان" rows="2" required></textarea>
+                </fieldset>
+
+                <button type="submit" class="submit-btn">تحديث المحتوى</button>
+                <button type="button" id="resetButton" class="reset-btn">إعادة تعيين</button>
+                <a href="../portfolio/index.html" id="publish" class="publish-btn">نشر</a>
+            </form>
+        </div>
+    </div>
+    
+    <!-- قسم ألوان الثيم -->
+    <div class="theme" style="display: none;">
+        <div class="themeContainer">
+            <div class="themeIcon defult"></div>
+            <div class="themeIcon deepSkyBlue"></div>
+            <div class="themeIcon darkMode"></div>
+            <div class="themeIcon black"></div>
+            <div class="themeIcon greenAndWhite"></div>
+            <div class="themeIcon redAndWhite"></div>
+            <div class="themeIcon purpleAndWhite"></div>
+            <div class="themeIcon orangeAndWhite"></div>
+            <div class="themeIcon pinkAndWhite"></div>
+            <div class="themeIcon brownAndWhite"></div>
+            <div class="themeIcon grayAndWhite"></div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="./js/scriptEditor.js"></script> -->
+    <script src="../editor/js/scriptEditorAr.js"></script>
+</body>
+
+</html>
