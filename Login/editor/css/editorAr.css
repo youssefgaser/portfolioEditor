@@ -9,7 +9,7 @@ body {
 }
 
 #openModalBtn {
-    right: 0;
+    right: auto;
     left: 2rem;
 }
 
