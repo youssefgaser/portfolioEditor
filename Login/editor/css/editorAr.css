@@ -16,6 +16,7 @@ body {
 #publish {
     position: absolute;
     left: 2rem;
+    right: auto;
     max-width: fit-content;
     diplay: block;
 }
