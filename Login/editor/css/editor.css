@@ -1538,7 +1538,7 @@ section:nth-child(odd) .animate.scroll,
   background: linear-gradient(to right, #3f51b5 50%, #ccc 50%);
 }
 
-.modal #publish {
+.modal .publish-btn {
   right: 2rem;
   position: absolute;
 }
