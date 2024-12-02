@@ -115,6 +115,7 @@ a:hover::after {
   font-weight: 500;
   margin-left: 3.5rem;
   transition: 0.3s;
+  width: fit-content;
 }
 
 .navbar a:hover,
