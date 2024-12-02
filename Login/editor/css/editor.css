@@ -1911,6 +1911,7 @@ section:nth-child(odd) .animate.scroll,
 }
 
 .theme {
+  direction: rtl;
   position: fixed;
   width: 70px;
   height: 300px;
