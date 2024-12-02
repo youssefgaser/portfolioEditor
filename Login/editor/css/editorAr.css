@@ -8,6 +8,10 @@ body {
     direction: rtl;
 }
 
+.skills .skills-row {
+    direction: ltr;
+}
+
 #openModalBtn {
     right: auto;
     left: 2rem;
